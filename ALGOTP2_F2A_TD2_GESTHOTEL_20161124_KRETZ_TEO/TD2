@@ -1,0 +1,19 @@
+1) Hotel : (NumHotel, NomH, AdresseH, CPH, TélH)
+   Chambre : (NumChambre, NumTéléphone, prixchambre)
+   Classe (NbreEtoiles, Caractéristiques)
+   Catégorie (CodeCatégorie, Description)
+   Consommation (NomConsommation, Dateconso, Heureconso, prixconso)
+   Facture ( prixchambre, prixconso, Nbreprestations)
+   Prestation : (Codeprest, DesignationPres,prixprestation)
+   Reservation : (NumRéservation,Typeréservation, Nom,Prénom,Adresse,Ville,CP,Pays,Tél,Email, DateDébut, DateFin, CodeCatégorie, NbreEtoiles,, DatePayeArrhes, MontantArrhes)
+
+2) Voi Assoc.mng
+
+3) Les cardinalités sont : Consommation -- Facture : 1-N
+						   Prestation -- Facture : 1-N
+						   Facture -- Client : 1-1
+						   Client -- Réservation : 1-1
+						   Réservation -- Hotel : 1-N
+						   Hotel -- Classe : 1-N
+						   Hotel -- Chambre : 1-N
+						   Chambre -- Catégorie : 1-N
